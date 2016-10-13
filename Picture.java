@@ -64,10 +64,18 @@ public class Picture
         ground.changeSize(1800);
         ground.makeVisible();
         
-        sun.slowMoveVertical(170);
+       
         
     }
-
+    
+    /**
+       *Movimiento del sol hacia abajo.
+        */
+    public void moveSun()
+    {
+         sun.slowMoveVertical(170);
+    }
+    
     /**
      * Change this picture to black/white display
      */
