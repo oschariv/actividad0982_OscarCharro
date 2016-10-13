@@ -52,9 +52,10 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
+        sun.moveVertical(-100);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(120);
+        
         
         ground = new Circle();
         ground.changeColor("green");
@@ -62,6 +63,9 @@ public class Picture
         ground.moveVertical(140);
         ground.changeSize(1800);
         ground.makeVisible();
+        
+        sun.slowMoveVertical(170);
+        
     }
 
     /**
