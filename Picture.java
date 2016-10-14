@@ -74,6 +74,14 @@ public class Picture
     public void moveSun()
     {
          sun.slowMoveVertical(170);
+         /**
+          *Cambiamos todo a blanco y negro
+            */
+         wall.changeColor("black");
+         window.changeColor("white");
+         roof.changeColor("black");
+         sun.changeColor("black");
+         ground.changeColor("black");
     }
     
     /**
