@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle ground;
+    private Person persona;
 
     /**
      * Constructor for objects of class Picture
@@ -64,7 +65,6 @@ public class Picture
         ground.changeSize(1800);
         ground.makeVisible();
         
-       
         
     }
     
@@ -85,6 +85,20 @@ public class Picture
     }
     
     /**
+     * Añadimos a una persona, y esta se mueve automaticamente hacia la casa
+     */
+    public void movePerson()
+    {
+        persona = new Person();
+        persona.changeColor("black");
+        persona.moveHorizontal(-250);
+        persona.moveVertical(50);
+        persona.makeVisible();
+        persona.slowMoveHorizontal(120);
+        
+    }
+    
+    /**
      * Change this picture to black/white display
      */
     public void setBlackAndWhite()
@@ -95,6 +109,7 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
+            ground.changeColor("black");
         }
     }
 
@@ -109,6 +124,7 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+            ground.changeColor("green");
         }
     }
 }
